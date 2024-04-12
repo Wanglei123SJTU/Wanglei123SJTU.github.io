@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "汪磊生活照.jpg"
+  avatar           : "wanglei_pic.jpg"
   name             : "Lei Wang"
   pronouns         : # example: "she/her"  
   bio              : "Junior majoring in Industrial Engineering, minoring in Finance, Shanghai Jiao Tong University"

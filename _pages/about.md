@@ -11,7 +11,7 @@ You can find my CV here: [Lei Wang's Curriculum Vitae](../assets/Wanglei_CV_Summ
 
 Hello! I'm a third year undergraduate student from [Department of Industrial Engineering & Management](https://ieem.sjtu.edu.cn/), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/). My research interest includes data-driven causal inference, field experiments, machine learning, and optimization methodologies to evaluate and optimize the strategies in the contexts of digital platforms and marketplaces.
 
-I am very fortunate to be advised by [[Prof. Ye]](https://zikunye.com/) from [Marketing at the Michael G. Foster School of Business](https://foster.uw.edu/), [University of Washington](https://www.washington.edu/). 
+I am very fortunate to be advised by [Prof. Ye](https://zikunye.com/) from [Marketing at the Michael G. Foster School of Business](https://foster.uw.edu/), [University of Washington](https://www.washington.edu/). 
 
 Selected Awards
 ------

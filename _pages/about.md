@@ -9,7 +9,7 @@ redirect_from:
 
 About
 ------
-You can find my CV here: [Lei Wang's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
+You can find my CV here: [Lei Wang's Curriculum Vitae](../assets/Wanglei_CV_Summer Research.pdf).
 
 Hello! I'm a third year undergraduate student from [[DEPARTMENT OF INDUSTRIAL ENGINEERING & MANAGEMENT]](https://ieem.sjtu.edu.cn/), [[SHANGHAI JIAO TONG UNIVERSITY]](https://www.sjtu.edu.cn/). My research interest includes xx.
 

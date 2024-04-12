@@ -7,6 +7,10 @@ redirect_from:
   - /about.html
 ---
 
+About
+------
+You can find my CV here: [Lei Wang's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
+
 Hello! I'm a third year undergraduate student from [[DEPARTMENT OF INDUSTRIAL ENGINEERING & MANAGEMENT]](https://ieem.sjtu.edu.cn/), [[SHANGHAI JIAO TONG UNIVERSITY]](https://www.sjtu.edu.cn/). My research interest includes xx.
 
 I am very fortunate to be advised by [Prof. XXX](https://www.XXX.com/) of XXX Lab from [School of Computer Science](https://cs.pku.edu.cn/), Peking University. I was advised by [Prof. XX](https://XXX.pku.edu.cn/) from [School of Computer Science](https://cs.pku.edu.cn/), Peking University.

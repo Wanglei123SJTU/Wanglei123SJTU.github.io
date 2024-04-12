@@ -7,13 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-About
-------
 You can find my CV here: [Lei Wang's Curriculum Vitae](../assets/Wanglei_CV_Summer Research.pdf).
 
-Hello! I'm a third year undergraduate student from [[DEPARTMENT OF INDUSTRIAL ENGINEERING & MANAGEMENT]](https://ieem.sjtu.edu.cn/), [[SHANGHAI JIAO TONG UNIVERSITY]](https://www.sjtu.edu.cn/). My research interest includes xx.
+Hello! I'm a third year undergraduate student from [DEPARTMENT OF INDUSTRIAL ENGINEERING & MANAGEMENT](https://ieem.sjtu.edu.cn/), [SHANGHAI JIAO TONG UNIVERSITY](https://www.sjtu.edu.cn/). My research interest includes data-driven causal inference, field experiments, machine learning, and optimization methodologies to evaluate and optimize the strategies in the contexts of digital platforms and marketplaces.
 
-I am very fortunate to be advised by [Prof. XXX](https://www.XXX.com/) of XXX Lab from [School of Computer Science](https://cs.pku.edu.cn/), Peking University. I was advised by [Prof. XX](https://XXX.pku.edu.cn/) from [School of Computer Science](https://cs.pku.edu.cn/), Peking University.
+I am very fortunate to be advised by [[Prof. Ye]](https://zikunye.com/) from [Marketing at the Michael G. Foster School of Business](https://foster.uw.edu/), [University of Washington](https://www.washington.edu/). 
 
 Selected Awards
 ------

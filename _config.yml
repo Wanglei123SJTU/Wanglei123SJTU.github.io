@@ -21,10 +21,10 @@ repository               : "Wanglei123SJTU/leiwang-sjtu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "汪磊生活照.jpg"
   name             : "Lei Wang"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Junior majoring in Industrial Engineering, minoring in Finance, Shanghai Jiao Tong University"
   location         : "Shanghai"
   # employer         : "Red Brick University"
   # uri              : # URL

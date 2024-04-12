@@ -12,7 +12,7 @@ title                    : "Lei Wang"
 title_separator          : "-"
 name                     : &name "Lei Wang"
 description              : &description "Junior, majoring in Industrial Engineering, minoring in Finance"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://wanglei123sjtu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "wanglei123sjtu.github.io"
 

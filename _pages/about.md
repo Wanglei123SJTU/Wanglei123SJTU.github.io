@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-You can find my CV here: [Lei Wang's Curriculum Vitae](../assets/Wanglei_CV_Summer Research.pdf).
+You can find my CV here: [Lei Wang's Curriculum Vitae](../files/汪磊留学简历_EN_暑研版.pdf).
 
 Hello! I'm a third year undergraduate student from [Department of Industrial Engineering & Management](https://ieem.sjtu.edu.cn/), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/). My research interest includes data-driven causal inference, field experiments, machine learning, and optimization methodologies to evaluate and optimize the strategies in the contexts of digital platforms and marketplaces.
 

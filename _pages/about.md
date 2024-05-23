@@ -13,7 +13,7 @@ Hello! I'm a third year undergraduate student from [Department of Industrial Eng
 
 I am very fortunate to be advised by [Prof. Ye](https://zikunye.com/) from [Marketing at the Michael G. Foster School of Business](https://foster.uw.edu/), [University of Washington](https://www.washington.edu/). Since May 2024, I have been working under Prof. Ye's guidance on several research projects. Currently, we are conducting a study on sentiment analysis of information from U.S. social networking sites. My research interest mainly focus on machine learning in the contexts of digital platforms and marketplaces.
 
-
+I will be applying for master's and Ph.D. programs in Operations Management (OM) and Operations Research (OR) in the U.S. for the Fall 2025.
 
 Academic Achievements
 ------
@@ -27,4 +27,6 @@ Selected Awards
 * Merit Student of Shanghai Jiao Tong University
 * Finalist Award for the 2023 U.S. College Mathematical Contest in Modeling 
 
+More About Me
+------
 In addition to my research experience, I have also explored the finance field: from September to October 2023, I worked as a tax intern at Ernst & Young. Furthermore, from June to September 2023, I served as an industry research intern in the mechanical group at Guohai Securities. Currently, I also invest in A-shares in my spare time.

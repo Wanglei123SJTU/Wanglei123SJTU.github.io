@@ -9,12 +9,22 @@ redirect_from:
 
 You can find my CV here: [Lei Wang's Curriculum Vitae](../files/汪磊留学简历_EN_暑研版.pdf).
 
-Hello! I'm a third year undergraduate student from [Department of Industrial Engineering & Management](https://ieem.sjtu.edu.cn/), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/). My research interest includes data-driven causal inference, field experiments, machine learning, and optimization methodologies to evaluate and optimize the strategies in the contexts of digital platforms and marketplaces.
+Hello! I'm a third year undergraduate student from [Department of Industrial Engineering & Management](https://ieem.sjtu.edu.cn/), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/). 
 
-I am very fortunate to be advised by [Prof. Ye](https://zikunye.com/) from [Marketing at the Michael G. Foster School of Business](https://foster.uw.edu/), [University of Washington](https://www.washington.edu/). 
+I am very fortunate to be advised by [Prof. Ye](https://zikunye.com/) from [Marketing at the Michael G. Foster School of Business](https://foster.uw.edu/), [University of Washington](https://www.washington.edu/). Since May 2024, I have been working under Prof. Ye's guidance on several research projects. Currently, we are conducting a study on sentiment analysis of information from U.S. social networking sites. My research interest mainly focus on machine learning in the contexts of digital platforms and marketplaces.
+
+
+
+Academic Achievements
+------
+* Total GPA: 3.97/4.30
+* Ranking: 1/55
+* Core Courseworks: Stochastic Models(100), Linear Algebra (98), Engineering Statistics (95), Operations Research (92), Machine Learning (In Progress)
 
 Selected Awards
 ------
 * 2022-2023 National Scholarship for Undergraduate Students
-* Excellent Student of Shanghai Jiao Tong University
-* Finalist Award for the 2023 American Collegiate Mathematical Modeling Competition
+* Merit Student of Shanghai Jiao Tong University
+* Finalist Award for the 2023 U.S. College Mathematical Contest in Modeling 
+
+In addition to my research experience, I have also explored the finance field: from September to October 2023, I worked as a tax intern at Ernst & Young. Furthermore, from June to September 2023, I served as an industry research intern in the mechanical group at Guohai Securities. Currently, I also invest in A-shares in my spare time.

@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-You can find my CV here: [Lei Wang's Curriculum Vitae](../files/汪磊留学简历_EN_暑研版.pdf).
+You can find my CV here: [Lei Wang's Curriculum Vitae](../files/CV_Lei.docx).
 
 Hello! I'm a third year undergraduate student from [Department of Industrial Engineering & Management](https://ieem.sjtu.edu.cn/), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/). 
 

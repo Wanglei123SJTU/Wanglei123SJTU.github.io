@@ -17,9 +17,9 @@ I will be applying for master's and Ph.D. programs in Operations Management (OM)
 
 Academic Achievements
 ------
-* Total GPA: 3.97/4.30
+* Total GPA: 3.99/4.30
 * Ranking: 1/55
-* Core Courseworks: Stochastic Models(100), Linear Algebra (98), Engineering Statistics (95), Operations Research (92), Machine Learning (In Progress)
+* Core Courseworks: Stochastic Models(100), Machine Learning (99), Linear Algebra (98), Engineering Statistics (95), Operations Research (92) 
 
 Selected Awards
 ------

@@ -25,7 +25,7 @@ Selected Awards
 ------
 * 2022-2023 National Scholarship for Undergraduate Students
 * Merit Student of Shanghai Jiao Tong University
-* Finalist Award for the 2023 U.S. College Mathematical Contest in Modeling([Thesis: Joy of Wordle: Based on Arima and WordleRT](../files/2312998.pdf)).
+* Finalist Award for the 2023 U.S. College Mathematical Contest in Modeling _([Thesis: Joy of Wordle: Based on Arima and WordleRT](../files/2312998.pdf))_
 
 More About Me
 ------

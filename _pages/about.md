@@ -17,6 +17,8 @@ Currently, we are conducting a study on sentiment analysis of information from U
 
 I will be applying for master's and Ph.D. programs in Operations Management (OM) and Operations Research (OR) in the U.S. for the Fall 2025.
 
+You can cantact me by e-mail: wanglei123@sjtu.edu.cn or by Wechat: Triplestone0603.
+
 Academic Achievements
 ------
 * Total GPA: 3.99/4.30

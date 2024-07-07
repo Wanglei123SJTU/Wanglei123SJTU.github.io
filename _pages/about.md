@@ -15,7 +15,8 @@ I am very fortunate to be advised by [Prof. Ye](https://zikunye.com/) from [Mark
 
 Currently, we are conducting a study on sentiment analysis of information from U.S. social networking sites. **My research interest mainly focus on machine learning in the contexts of digital platforms and marketplaces.**
 
-I will be applying for master's and Ph.D. programs in Operations Management (OM) and Operations Research (OR) in the U.S. for the Fall 2025.
+
+<!-- I will be applying for master's and Ph.D. programs in Operations Management (OM) and Operations Research (OR) in the U.S. for the Fall 2025. -->
 
 You can cantact me by e-mail: wanglei123@sjtu.edu.cn or by Wechat: Triplestone0603.
 

@@ -22,7 +22,7 @@ You can cantact me by e-mail: wanglei123@sjtu.edu.cn or by Wechat: Triplestone06
 
 Academic Achievements
 ------
-* Total GPA: 3.99/4.30
+* Total GPA: 3.99/4.30; 91.58/100
 * Ranking: 1/55
 * Core Courseworks: Stochastic Models(100), Machine Learning (99), Linear Algebra (98), Engineering Statistics (95), Operations Research (92) 
 

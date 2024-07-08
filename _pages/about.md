@@ -35,7 +35,7 @@ Selected Awards
 More About Me
 ------
 In addition to my research experience, I have also explored the finance field: 
-* Ernst & Young (China) Advisory Limited Intern, Corporate Tax Department                                                   _Aug. 2023 - Sep. 2023_
-* GF Securities Co., Ltd.   Research Assistant, Institute, Machinery Team                                                  _Sep. 2023 - Dec. 2023_
-* Sealand Securities Co., Ltd. Research Assistant, Institute, Machinery Team                                              _Jun. 2023 - Sep. 2023_
+* Ernst & Young (China) Advisory Limited, Corporate Tax Department Intern                                                   _Aug. 2023 - Sep. 2023_
+* GF Securities Co., Ltd.   Research Assistant                                                  _Sep. 2023 - Dec. 2023_
+* Sealand Securities Co., Ltd. Research Assistant                                             _Jun. 2023 - Sep. 2023_
 * Currently, I also invest in A-shares in my spare time.

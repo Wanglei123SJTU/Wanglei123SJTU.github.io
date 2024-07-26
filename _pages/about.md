@@ -18,7 +18,7 @@ Currently, we are conducting a study on sentiment analysis of information from U
 
 <!-- I will be applying for master's and Ph.D. programs in Operations Management (OM) and Operations Research (OR) in the U.S. for the Fall 2025. -->
 
-You can cantact me by e-mail: wanglei123@sjtu.edu.cn or by Wechat: Triplestone0603.
+You can cantact me by e-mail: wanglei123sjtu@gmail.com or by Wechat: Triplestone0603.
 
 Academic Achievements
 ------
@@ -32,10 +32,9 @@ Selected Awards
 * Merit Student of Shanghai Jiao Tong University
 * Finalist Award for the 2023 U.S. College Mathematical Contest in Modeling _([Thesis: Joy of Wordle: Based on Arima and WordleRT](../files/2312998.pdf))_
 
-More About Me
+Internship Experience
 ------
 In addition to my research experience, I have also explored the finance field: 
-* Ernst & Young Advisory Limited, Corporate Tax Department Intern                                                   _Aug. 2023 - Sep. 2023_
+* Ernst & Young Advisory Limited, Corporate Tax Department Intern                                 _Aug. 2023 - Sep. 2023_
 * GF Securities Co., Ltd.   Research Assistant                                                  _Sep. 2023 - Dec. 2023_
 * Sealand Securities Co., Ltd. Research Assistant                                             _Jun. 2023 - Sep. 2023_
-* Currently, I also invest in A-shares in my spare time.

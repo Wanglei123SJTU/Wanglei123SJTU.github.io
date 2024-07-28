@@ -34,7 +34,7 @@ Selected Awards
 
 Internship Experience
 ------
-In addition to my research experience, I have also explored the finance field: 
+I have always been very interested in business and have done some related internships:
 * Ernst & Young Advisory Limited, Corporate Tax Department Intern                                 _Aug. 2023 - Sep. 2023_
 * GF Securities Co., Ltd.   Research Assistant                                                  _Sep. 2023 - Dec. 2023_
 * Sealand Securities Co., Ltd. Research Assistant                                             _Jun. 2023 - Sep. 2023_

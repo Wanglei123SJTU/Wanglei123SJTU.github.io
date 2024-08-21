@@ -11,7 +11,7 @@ redirect_from:
 
 Hello! I'm a third-year undergraduate student from Department of Industrial Engineering & Management, Shanghai Jiao Tong University. I am majoring in Industrial Engineering and minoring in Finance.
 
-I am very fortunate to be advised by [Prof. Mizik](https://foster.uw.edu/faculty-research/directory/natalie-mizik/) & [Prof. Ye](https://zikunye.com/) from Marketing at the Michael G. Foster School of Business, University of Washington in Seattle. Since May 2024, I have been working under professors' guidance.
+I am very fortunate to be advised by [Prof. Ye](https://zikunye.com/) & [Prof. Mizik](https://foster.uw.edu/faculty-research/directory/natalie-mizik/) from Marketing at the Michael G. Foster School of Business, University of Washington in Seattle. Since May 2024, I have been working under professors' guidance.
 
 Currently, we are conducting studies on sentiment analysis of information from U.S. social networking sites and the application of Data Shapley in SearchGPT contexts. **My research interests mainly focus on machine learning in the contexts of digital platforms and marketplaces.**
 

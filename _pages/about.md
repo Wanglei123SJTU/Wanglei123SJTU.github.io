@@ -23,7 +23,7 @@ Academic Achievements
 ------
 * Total GPA: 3.99/4.30; 91.58/100
 * Ranking: 1/55
-* Core Courseworks: Stochastic Models(100), Machine Learning (99), Linear Algebra (98), Engineering Statistics (95), Data Structure (95), Operations Research (92)
+* Core Courseworks: Stochastic Models(100), Machine Learning(99), Linear Algebra(98), Engineering Statistics(95), Data Structure(95), Operations Research(92)
 * You can find my transcript here: [Lei's Transcript](../files/Lei's Transcript.pdf)
 
 Selected Awards

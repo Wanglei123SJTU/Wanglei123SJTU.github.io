@@ -9,26 +9,26 @@ redirect_from:
 
 <!-- You can find my CV here: [Lei's Curriculum Vitae](../files/CV_Lei.pdf). -->
 
-Hello! I'm a third year undergraduate student from Department of Industrial Engineering & Management, Shanghai Jiao Tong University. I major in Industrial Engineering and minor in Finance.
+Hello! I'm a third year undergraduate student from Department of Industrial Engineering & Management, Shanghai Jiao Tong University. I am majoring in Industrial Engineering and minoring in Finance.
 
 I am very fortunate to be advised by [Prof. Ye](https://zikunye.com/) from Marketing at the Michael G. Foster School of Business, University of Washington in Seattle. Since May 2024, I have been working under Prof. Ye's guidance.
 
-Currently, we are conducting a study on sentiment analysis of information from U.S. social networking sites. **My research interest mainly focus on machine learning in the contexts of digital platforms and marketplaces.**
+Currently, we are conducting a study on sentiment analysis of information from U.S. social networking sites. **My research interests mainly focus on machine learning in the contexts of digital platforms and marketplaces.**
 
 I will be applying for Ph.D. programs in Marketing in the U.S. for the Fall 2025.
 
-You can cantact me by e-mail: wanglei123sjtu@gmail.com or by Wechat: Triplestone0603.
+You can contact me via email: wanglei123sjtu@gmail.com or by Wechat: Triplestone0603.
 
 Academic Achievements
 ------
 * Total GPA: 3.99/4.30; 91.58/100
 * Ranking: 1/55
-* Core Courseworks: Stochastic Models(100), Machine Learning(99), Linear Algebra(98), Engineering Statistics(95), Data Structure(95), Operations Research(92)
-* You can find my transcript here: [Lei's Transcript](../files/Lei's_Transcript.pdf).
+* Core Coursework: Stochastic Models(100), Machine Learning(99), Linear Algebra(98), Engineering Statistics(95), Data Structure(95), Operations Research(92)
+* You can find my transcript here: [Lei's Transcript](../files/Lei_Transcript.pdf).
 
 Selected Awards
 ------
-* 2022-2023 National Scholarship for Undergraduate Students (Top 1% in Chinese students)
+* 2022-2023 National Scholarship for Undergraduate Students (Top 1% among Chinese students)
 * Merit Student of Shanghai Jiao Tong University
 * Finalist Award for the 2023 U.S. College Mathematical Contest in Modeling (Top 1%) _([Thesis: Joy of Wordle: Based on Arima and WordleRT](../files/2312998.pdf))_
 

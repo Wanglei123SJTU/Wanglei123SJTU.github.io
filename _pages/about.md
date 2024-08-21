@@ -25,6 +25,8 @@ Academic Achievements
 * Ranking: 1/55
 * Core Coursework: Stochastic Models(100), Machine Learning(99), Linear Algebra(98), Engineering Statistics(95), Data Structure(95), Operations Research(92)
 * You can find my transcript here: [Lei's Transcript](../files/Lei_Transcript.pdf).
+* TOEFL: 103(Speaking: 23)
+* *GRE: In preparation
 
 Selected Awards
 ------

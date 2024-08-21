@@ -24,11 +24,11 @@ Academic Achievements
 * Total GPA: 3.99/4.30; 91.58/100
 * Ranking: 1/55
 * Core Courseworks: Stochastic Models(100), Machine Learning(99), Linear Algebra(98), Engineering Statistics(95), Data Structure(95), Operations Research(92)
-* You can find my transcript here: [Lei's Transcript](../files/Lei's Transcript.pdf)
+* You can find my transcript here: [Lei's Transcript](../files/Lei's_Transcript.pdf).
 
 Selected Awards
 ------
-* 2022-2023 National Scholarship for Undergraduate Students (Top 1%)
+* 2022-2023 National Scholarship for Undergraduate Students (Top 1% in Chinese students)
 * Merit Student of Shanghai Jiao Tong University
 * Finalist Award for the 2023 U.S. College Mathematical Contest in Modeling (Top 1%) _([Thesis: Joy of Wordle: Based on Arima and WordleRT](../files/2312998.pdf))_
 

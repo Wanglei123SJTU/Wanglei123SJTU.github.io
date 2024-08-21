@@ -32,7 +32,7 @@ Selected Awards
 * Merit Student of Shanghai Jiao Tong University
 * Finalist Award for the 2023 U.S. College Mathematical Contest in Modeling (Top 1%) _([Thesis: Joy of Wordle: Based on Arima and WordleRT](../files/2312998.pdf))_
 
-Internship Experience
+Internship Experiences
 ------
 I have always been very interested in business and have done some related internships:
 * Ernst & Young Advisory Limited, Corporate Tax Department Intern                                 _Aug. 2023 - Sep. 2023_

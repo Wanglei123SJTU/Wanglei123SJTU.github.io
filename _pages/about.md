@@ -7,14 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-<!-- You can find my CV here: [Lei Wang's Curriculum Vitae](../files/CV_Lei.pdf). -->
+<!-- You can find my CV here: [Lei's Curriculum Vitae](../files/CV_Lei.pdf). -->
 
 Hello! I'm a third year undergraduate student from Department of Industrial Engineering & Management, Shanghai Jiao Tong University. I major in Industrial Engineering and minor in Finance.
 
-I am very fortunate to be advised by [Prof. Ye](https://zikunye.com/) from Marketing at the Michael G. Foster School of Business, University of Washington in Seattle. Since May 2024, I have been working under Prof. Ye's guidance. 
+I am very fortunate to be advised by [Prof. Ye](https://zikunye.com/) from Marketing at the Michael G. Foster School of Business, University of Washington in Seattle. Since May 2024, I have been working under Prof. Ye's guidance.
 
 Currently, we are conducting a study on sentiment analysis of information from U.S. social networking sites. **My research interest mainly focus on machine learning in the contexts of digital platforms and marketplaces.**
-
 
 I will be applying for Ph.D. programs in Marketing in the U.S. for the Fall 2025.
 
@@ -24,14 +23,14 @@ Academic Achievements
 ------
 * Total GPA: 3.99/4.30; 91.58/100
 * Ranking: 1/55
-* Core Courseworks: Stochastic Models(100), Machine Learning (99), Linear Algebra (98), Engineering Statistics (95), Operations Research (92)
-* You can find my transcript here: [Lei's Transcript](../files/CV_Lei.pdf)
+* Core Courseworks: Stochastic Models(100), Machine Learning (99), Linear Algebra (98), Engineering Statistics (95), Data Structure (95), Operations Research (92)
+* You can find my transcript here: [Lei's Transcript](../files/Lei's Transcript.pdf)
 
 Selected Awards
 ------
-* 2022-2023 National Scholarship for Undergraduate Students
+* 2022-2023 National Scholarship for Undergraduate Students (Top 1%)
 * Merit Student of Shanghai Jiao Tong University
-* Finalist Award for the 2023 U.S. College Mathematical Contest in Modeling _([Thesis: Joy of Wordle: Based on Arima and WordleRT](../files/2312998.pdf))_
+* Finalist Award for the 2023 U.S. College Mathematical Contest in Modeling (Top 1%) _([Thesis: Joy of Wordle: Based on Arima and WordleRT](../files/2312998.pdf))_
 
 Internship Experience
 ------

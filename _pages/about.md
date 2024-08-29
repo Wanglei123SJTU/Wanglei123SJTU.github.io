@@ -17,8 +17,6 @@ Currently, we are conducting studies on sentiment analysis of information from U
 
 I will be applying for Ph.D. programs in Marketing in the U.S. for the Fall 2025.
 
-You can contact me via email: wanglei123sjtu@gmail.com or by Wechat: Triplestone0603.
-
 Academic Achievements
 ------
 * Total GPA: 3.99/4.30; 91.58/100
@@ -27,6 +25,11 @@ Academic Achievements
 * You can find my transcript here: [Lei's Transcript](../files/Lei_Transcript.pdf).
 * TOEFL: 103(Speaking: 23)
 * GRE: In preparation
+
+Contact
+------
+* Email: wanglei123sjtu@gmail.com
+* Wechat: Triplestone0603
 
 Selected Awards
 ------

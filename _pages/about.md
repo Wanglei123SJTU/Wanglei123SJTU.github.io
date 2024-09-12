@@ -9,7 +9,7 @@ redirect_from:
 
 You can find my CV here: [Lei's Curriculum Vitae](../Lei_CV_latex.pdf).
 
-Hello! I'm a third-year undergraduate student from Department of Industrial Engineering & Management, Shanghai Jiao Tong University. I am majoring in Industrial Engineering and minoring in Finance.
+Hello! I'm a fourth-year undergraduate student from Department of Industrial Engineering & Management, Shanghai Jiao Tong University. I am majoring in Industrial Engineering and minoring in Finance.
 
 I am very fortunate to be advised by [Prof. Ye](https://zikunye.com/) & [Prof. Mizik](https://foster.uw.edu/faculty-research/directory/natalie-mizik/) from Marketing at the Michael G. Foster School of Business, University of Washington in Seattle. Since May 2024, I have been working under professors' guidance.
 

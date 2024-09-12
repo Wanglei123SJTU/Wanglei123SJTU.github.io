@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<!-- You can find my CV here: [Lei's Curriculum Vitae](../files/CV_Lei.pdf). -->
+You can find my CV here: [Lei's Curriculum Vitae](../Lei_CV_latex.pdf).
 
 Hello! I'm a third-year undergraduate student from Department of Industrial Engineering & Management, Shanghai Jiao Tong University. I am majoring in Industrial Engineering and minoring in Finance.
 

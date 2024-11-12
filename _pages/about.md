@@ -21,7 +21,7 @@ I will be applying for Ph.D. programs in Marketing in the U.S. for the Fall 2025
 
 
 <video width="640" height="480" controls>
-  <source src="/files/self_driving_video.mp4" type="video/mp4">
+  <source src="../files/self_driving_video.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
 

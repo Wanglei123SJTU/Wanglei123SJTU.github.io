@@ -18,6 +18,13 @@ Currently, I am extremely fortunate to be advised by [Prof. Zikun Ye](https://zi
 
 I will be applying for Ph.D. programs in Marketing in the U.S. for the Fall 2025.
 
+
+
+<video width="640" height="480" controls>
+  <source src="/videos/video.mp4" type="video/mp4">
+  您的浏览器不支持视频标签。
+</video>
+
 Academic Achievements
 ------
 * Total GPA: 91.58/100

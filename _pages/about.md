@@ -73,9 +73,9 @@ Selected Awards
 * 2022, 2023 Merit Student of Shanghai Jiao Tong University (Top 10% of SJTU)
 
 
-Internship Experiences
+Extracurricular Activities
 ------
-I have always been very interested in business and have done some related internships:
+* Scholars and Achievers Club of SJTU                                                               (_Jun. 2023 - Present_)
 * Ernst & Young Advisory Limited, Corporate Tax Department Intern                                 (_Aug. 2023 - Sept. 2023_)
 * GF Securities Co., Ltd.   Research Assistant                                                  (_Sep. 2023 - Dec. 2023_)
 * Sealand Securities Co., Ltd. Research Assistant                                             (_Jun. 2023 - Sept. 2023_)

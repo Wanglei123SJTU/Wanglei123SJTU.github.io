@@ -26,7 +26,7 @@ Academic Achievements
 
 Research Experience
 ------
-Value Attribution for LLM Summaries: Data Shapley Approach                   
+### Value Attribution for LLM Summaries: Data Shapley Approach                   
 
 * Proposed a systematic framework using Shapley values to transparently quantify the contribution of each
 information source in LLM-generated summaries, in the context of SearchGPT.
@@ -35,7 +35,7 @@ embedding similarity, aimed at reducing computational costs in Shapley value cal
 * Tested the efficiency of our algorithm on a large-scale Amazon review dataset, achieving approximately 50%
 computational savings at an MAE of 0.15 compared to baseline methods.
 
-Equitable Hydrogen Technology Community Engagement                
+### Equitable Hydrogen Technology Community Engagement                
 
 * Collected and analyzed one million posts on hydrogen energy from Reddit and Twitter, conducted sentiment
 classification using LLMs, and applied theme-driven topic modeling with BERTopic.
@@ -46,7 +46,7 @@ equity within social media communities.
 Project Experience
 ------
 
-Sentiment Explorational Analysis Based on DOUBAN Movie Reviews            
+### Sentiment Explorational Analysis Based on DOUBAN Movie Reviews            
 
 * Compared sentiment analysis models using both dictionary-based methods and word embedding techniques.
 * Identified potential manipulation in movie ratings through statistical tests (t-tests) and clustering (K-means),
@@ -55,7 +55,7 @@ providing insights into self-boosting behaviors.
 sentiment-based searches to enhance user experience and engagement.
 
 
-Autonomous Vehicle Navigation and Obstacle Avoidance Project                   
+### Autonomous Vehicle Navigation and Obstacle Avoidance Project                   
 
 * Developed and trained a CNN model using ResNet18 on a custom-labeled image dataset to enable key functions for autonomous navigation, including route recognition and traffic light detection.
 * Integrated radar-based sensing to enhance obstacle detection, enabling the vehicle to autonomously avoid obstacles after object identification along its path.

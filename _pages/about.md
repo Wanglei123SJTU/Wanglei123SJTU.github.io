@@ -70,7 +70,7 @@ Selected Awards
 * 2023 National Scholarship for Undergraduate Students (Top 0.2% among Chinese students)
 * 2023 Toyota Boshoku Scholarship of Shanghai Jiao Tong University (Top 2% of SJTU)
 * 2023 Finalist Award for the U.S. College Mathematical Contest in Modeling (Top 1% worldwide) 
-* 2022, 2023 Merit Student of Shanghai Jiao Tong University (Top 10% of SJTU)
+* 2022, 2023 Merit Student of Shanghai Jiao Tong University (Top 5% of SJTU)
 
 
 Extracurricular Activities

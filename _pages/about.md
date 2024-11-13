@@ -8,36 +8,69 @@ redirect_from:
 ---
 
 
-You can find my CV here: [Lei's Curriculum Vitae](../Lei_CV_latex.pdf).
+You can find my CV here: [Lei's Curriculum Vitae](../Lei_CV.pdf).
 
-I am a fourth-year undergraduate student in the Department of Industrial Engineering & Management at Shanghai Jiao Tong University. I am majoring in Industrial Engineering and minoring in Finance.
+I am a fourth-year undergraduate student in the Department of Industrial Engineering & Management at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/). I am majoring in Industrial Engineering and minoring in Finance.
 
 Currently, I am extremely fortunate to be advised by [Prof. Zikun Ye](https://zikunye.com/) on Source Attribution in Generative LLMs. Simultaneously, I also have the greatest honor to be supervised by [Prof. Natalie Mizik](https://foster.uw.edu/faculty-research/directory/natalie-mizik/) on Gaining Hydrogen Perceptions based on social media analysis. 
 
-**My research interests mainly focus on quantitative marketing, especially the application of Large Language Models.**
-
-I will be applying for Ph.D. programs in Marketing in the U.S. for the Fall 2025.
+My research interests mainly focus on quantitative marketing, especially the application of Large Language Models.
 
 
+Research Experience
+------
+Value Attribution for LLM Summaries: Data Shapley Approach                    _May. 2023 - Present_
+
+* Proposed a systematic framework using Shapley values to transparently quantify the contribution of each
+information source in LLM-generated summaries, in the context of SearchGPT.
+* Developed a novel Thematic Embedding Clustering algorithm leveraging theme-driven information extraction and
+embedding similarity, aimed at reducing computational costs in Shapley value calculations.
+* Tested the efficiency of our algorithm on a large-scale Amazon review dataset, achieving approximately 50%
+computational savings at an MAE of 0.15 compared to baseline methods.
+
+Equitable Hydrogen Technology Community Engagement                _May. 2023 - Present_
+
+* Collected and analyzed one million posts on hydrogen energy from Reddit and Twitter, conducted sentiment
+classification using LLMs, and applied theme-driven topic modeling with BERTopic.
+* Developed a preliminary pipeline using machine learning methods to identify disadvantaged groups, promoting
+equity within social media communities.
+
+Academic Achievements
+------
+* Total GPA: 91.64/100
+* Ranking: 1/55
+* Core Coursework: Stochastic Models(100), Machine Learning(99), Linear Algebra(98), Engineering Statistics(95), Data Structure(95), Operations Research(92), Econometrics(90)
+* You can find my transcript here: [Lei's Transcript](../files/Transcript.pdf).
+
+Project Experience
+------
+
+Sentiment Explorational Analysis Based on DOUBAN Movie Reviews             _Apr. 2024 - Jun. 2024_
+
+* Compared sentiment analysis models using both dictionary-based methods and word embedding techniques.
+* Identified potential manipulation in movie ratings through statistical tests (t-tests) and clustering (K-means),
+providing insights into self-boosting behaviors.
+* Designed and implemented a user-friendly movie search engine, allowing users to perform open-ended
+sentiment-based searches to enhance user experience and engagement.
+
+
+Autonomous Vehicle Navigation and Obstacle Avoidance Project                    _Mar. 2024 - Jun. 2024_
+
+* Developed and trained a CNN model using ResNet18 on a custom-labeled image dataset to enable key functions for autonomous navigation, including route recognition and traffic light detection.
+* Integrated radar-based sensing to enhance obstacle detection, enabling the vehicle to autonomously avoid obstacles after object identification along its path.
 
 <video width="400" height="480" controls>
   <source src="../files/self_driving_video.mp4" type="video/mp4">
   您的浏览器不支持视频标签。
 </video>
 
-Academic Achievements
-------
-* Total GPA: 91.58/100
-* Ranking: 1/55
-* Core Coursework: Stochastic Models(100), Machine Learning(99), Linear Algebra(98), Engineering Statistics(95), Data Structure(95), Operations Research(92), Reinforcement Learning(In progress)
-* You can find my transcript here: [Lei's Transcript](../files/Transcript.pdf).
-
 Selected Awards
 ------
-* 2022-2023 National Scholarship for Undergraduate Students (Top 0.2% among Chinese students)
-* Toyota Boshoku Scholarship (Top 2% of SJTU)
-* Finalist Award for the 2023 U.S. College Mathematical Contest in Modeling (Top 1% worldwide) _([Thesis: Joy of Wordle: Based on Arima and WordleRT](../files/2312998.pdf))_
-* Merit Student of Shanghai Jiao Tong University
+* 2023 National Scholarship for Undergraduate Students (Top 0.2% among Chinese students)
+* 2023 Toyota Boshoku Scholarship of Shanghai Jiao Tong University (Top 2% of SJTU)
+* 2023 Finalist Award for the U.S. College Mathematical Contest in Modeling (Top 1% worldwide) 
+* 2022, 2023 Merit Student of Shanghai Jiao Tong University (Top 10% of SJTU)
+
 
 Internship Experiences
 ------

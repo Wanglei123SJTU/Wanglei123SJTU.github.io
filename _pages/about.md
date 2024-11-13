@@ -75,7 +75,7 @@ Selected Awards
 
 Extracurricular Activities
 ------
-* Scholars and Achievers Club of SJTU                                                               (_Jun. 2023 - Present_)
+* Scholars and Achievers Club of SJTU, Core Member                                                 (_Jun. 2023 - Present_)
 * Ernst & Young Advisory Limited, Corporate Tax Department Intern                                 (_Aug. 2023 - Sept. 2023_)
 * GF Securities Co., Ltd.   Research Assistant                                                  (_Sep. 2023 - Dec. 2023_)
 * Sealand Securities Co., Ltd. Research Assistant                                             (_Jun. 2023 - Sept. 2023_)

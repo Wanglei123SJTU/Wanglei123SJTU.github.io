@@ -46,7 +46,7 @@ equity within social media communities.
 Project Experience
 ------
 
-### Sentiment Explorational Analysis Based on DOUBAN Movie Reviews            
+### Sentiment Explorational Analysis Based on Movie Reviews            
 
 * Compared sentiment analysis models using both dictionary-based methods and word embedding techniques.
 * Identified potential manipulation in movie ratings through statistical tests (t-tests) and clustering (K-means),

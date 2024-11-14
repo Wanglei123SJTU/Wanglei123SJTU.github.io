@@ -18,7 +18,7 @@ My research interests mainly focus on quantitative marketing, especially the app
 
 Academic Achievements
 ------
-* Total GPA: 91.64/100
+* Major GPA: 91.64/100
 * Ranking: 1/55
 * Core Coursework: Stochastic Models(100), Machine Learning(99), Linear Algebra(98), Engineering Statistics(95), Data Structure(95), Operations Research(92), Econometrics(90)
 * You can find my transcript here: [Lei's Transcript](../files/Transcript.pdf).
@@ -51,8 +51,7 @@ Project Experience
 * Compared sentiment analysis models using both dictionary-based methods and word embedding techniques.
 * Identified potential manipulation in movie ratings through statistical tests (t-tests) and clustering (K-means),
 providing insights into self-boosting behaviors.
-* Designed and implemented a user-friendly movie search engine, allowing users to perform open-ended
-sentiment-based searches to enhance user experience and engagement.
+* Developed and implemented a user-friendly movie search engine utilizing Douban movie review datasets, enabling users to conduct open-ended, sentiment-based searches to enhance user experience and engagement.
 
 
 ### Autonomous Vehicle Navigation and Obstacle Avoidance Project                   
@@ -62,23 +61,23 @@ sentiment-based searches to enhance user experience and engagement.
 
 <video width="400" height="480" controls>
   <source src="../files/self_driving_video.mp4" type="video/mp4">
-  您的浏览器不支持视频标签。
+  Your browser does not support the video tag.
 </video>
 
 Selected Awards
 ------
 * 2023 National Scholarship for Undergraduate Students (Top 0.2% among Chinese students)
-* 2023 Toyota Boshoku Scholarship of Shanghai Jiao Tong University (Top 2% of SJTU)
-* 2023 Finalist Award for the U.S. College Mathematical Contest in Modeling (Top 1% worldwide) 
+* 2023 Finalist Award for the U.S. College Mathematical Contest in Modeling (Top 1% worldwide)
+* 2022 Toyota Boshoku Scholarship of Shanghai Jiao Tong University (Top 2% of SJTU)
 * 2022, 2023 Merit Student of Shanghai Jiao Tong University (Top 5% of SJTU)
 
 
 Extracurricular Activities
 ------
 * Scholars and Achievers Club of SJTU, Core Member                                                 (_Jun. 2023 - Present_)
-* Ernst & Young Advisory Limited, Corporate Tax Department Intern                                 (_Aug. 2023 - Sept. 2023_)
-* GF Securities Co., Ltd.   Research Assistant                                                  (_Sep. 2023 - Dec. 2023_)
-* Sealand Securities Co., Ltd. Research Assistant                                             (_Jun. 2023 - Sept. 2023_)
+* Ernst & Young Advisory, Corporate Tax Intern                                 (_Aug. 2023 - Sept. 2023_)
+* GF Securities, Research Intern                                                  (_Sep. 2023 - Dec. 2023_)
+* Sealand Securities, Research Intern                                           (_Jun. 2023 - Sept. 2023_)
 
 Contact
 ------

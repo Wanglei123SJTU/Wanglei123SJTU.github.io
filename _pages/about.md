@@ -27,7 +27,8 @@ Academic Achievements
 Research Experience
 ------
 ### Value Attribution for LLM Summaries: Data Shapley Approach                   
-<iframe src="../architecture_of_ai_search_engine_version2.pdf" style="border: none; width: 100%; height: 600px;"></iframe>
+
+<img src="../framework.png" alt="Profile Picture" width="300" height="auto">
 
 
 * Proposed a systematic framework using Shapley values to transparently quantify the contribution of each

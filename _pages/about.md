@@ -28,7 +28,7 @@ Research Experience
 ------
 ### Value Attribution for LLM Summaries: Data Shapley Approach                   
 
-<img src="../framework.png" alt="Profile Picture" width="300" height="auto">
+<img src="../framework.png" alt="Profile Picture" width="800" height="auto">
 
 
 * Proposed a systematic framework using Shapley values to transparently quantify the contribution of each

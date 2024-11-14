@@ -27,8 +27,8 @@ Academic Achievements
 Research Experience
 ------
 ### Value Attribution for LLM Summaries: Data Shapley Approach                   
+<iframe src="../architecture_of_ai_search_engine_version2.pdf" style="border: none; width: 100%; height: 600px;"></iframe>
 
-<embed src="../architecture_of_ai_search_engine_version2.pdf" width="800px" height="600px" />
 
 * Proposed a systematic framework using Shapley values to transparently quantify the contribution of each
 information source in LLM-generated summaries, in the context of SearchGPT.

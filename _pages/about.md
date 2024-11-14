@@ -64,6 +64,12 @@ providing insights into self-boosting behaviors.
   Your browser does not support the video tag.
 </video>
 
+### Simulation Evaluation and Optimization of Operational Status at N Bank
+
+* Conducted on-site research and used the collected data to build a simulation model of the bank's operational processes in Arena, identifying existing inefficiencies and bottlenecks.
+* Formulated objective functions to minimize service time and maximize operational efficiency. Applied combinatorial optimization under real-world constraints, including capacity and budget limitations, and used OptQuest software to solve the optimization problem. Integrated a social force model to enhance the simulation's accuracy and realism.
+
+
 Selected Awards
 ------
 * 2023 National Scholarship for Undergraduate Students (Top 0.2% among Chinese students)

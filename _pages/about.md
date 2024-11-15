@@ -20,7 +20,7 @@ Academic Achievements
 ------
 * Major GPA: 91.64/100
 * Ranking: 1/55
-* Core Coursework: Stochastic Models(100), Machine Learning(99), Linear Algebra(98), Engineering Statistics(95), Data Structure(95), Operations Research(92), Econometrics(90)
+* Core Courses: Stochastic Models(100/100), Machine Learning(99/100), Linear Algebra(98/100), Engineering Statistics(95/100), Data Structure(95/100), Operations Research(92/100), Econometrics(90/100)
 * You can find my transcript here: [Lei's Transcript](../files/Transcript.pdf).
 
 

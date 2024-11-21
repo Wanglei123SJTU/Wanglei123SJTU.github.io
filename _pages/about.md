@@ -13,9 +13,9 @@ You can find my CV here: [Lei's Curriculum Vitae](../Lei CV.pdf).
 
 I am a fourth-year undergraduate student in the Department of Industrial Engineering & Management at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/). I am majoring in Industrial Engineering and minoring in Finance.
 
-Currently, I am extremely fortunate to be advised by [Prof. Zikun Ye](https://zikunye.com/) on Source Attribution in Generative LLMs. Simultaneously, I also have the greatest honor to be supervised by [Prof. Natalie Mizik](https://foster.uw.edu/faculty-research/directory/natalie-mizik/) on Gaining Hydrogen Perceptions based on social media analysis. 
+Currently, I am extremely fortunate to be advised by [Prof. Zikun Ye](https://zikunye.com/) on Source Attribution in Generative LLMs. Simultaneously, I also have the greatest honor to be supervised by [Prof. Natalie Mizik](https://foster.uw.edu/faculty-research/directory/natalie-mizik/) on Gaining Hydrogen Perceptions based on Social Media Analysis. 
 
-My research interests mainly focus on quantitative marketing, especially the application of Large Language Models.
+My research interests mainly focus on Quantitative Marketing, especially the application of Large Language Models.
 
 Academic Achievements
 ------
@@ -80,6 +80,7 @@ Selected Awards
 * Finalist Award for the U.S. College Mathematical Contest in Modeling (Top 1% worldwide)
 * Nezha Technology Excellence Scholarship of Shanghai Jiao Tong University (Top 1% of SJTU)
 * Toyota Boshoku Excellence Scholarship of Shanghai Jiao Tong University (Top 2% of SJTU)
+* Academic Scholarship of Shanghai Jiao Tong University (Top 5% of SJTU)
 * Merit Student of Shanghai Jiao Tong University (Top 5% of SJTU)
 
 

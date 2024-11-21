@@ -91,8 +91,8 @@ Extracurricular Activities
 
 Standardized Test
 ------
-* TOEFL 103(Speakling: 26/30),
-* GRE 326(V:156/170, Q:170/170, AW:3.5)
+* TOEFL: 103(Speakling: 26/30),
+* GRE: 326(V: 156/170, Q: 170/170, AW: 3.5)
 
 Contact
 ------

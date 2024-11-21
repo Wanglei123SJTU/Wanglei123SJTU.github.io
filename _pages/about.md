@@ -7,8 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-
-You can find my CV here: [Lei's Curriculum Vitae](../Lei_CV.pdf).
+<!--
+You can find my CV here: [Lei's Curriculum Vitae](../Lei CV.pdf).
+-->
 
 I am a fourth-year undergraduate student in the Department of Industrial Engineering & Management at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/). I am majoring in Industrial Engineering and minoring in Finance.
 
@@ -38,7 +39,7 @@ embedding similarity, aimed at reducing computational costs in Shapley value cal
 * Tested the efficiency of our algorithm on a large-scale Amazon review dataset, achieving approximately 50%
 computational savings at an MAE of 0.15 compared to baseline methods.
 
-### Equitable Hydrogen Technology Community Engagement                
+### Promoting Equitable Hydrogen Energy Access for Disadvantaged Communities             
 
 * Collected and analyzed one million posts on hydrogen energy from Reddit and Twitter, conducted sentiment
 classification using LLMs, and applied theme-driven topic modeling with BERTopic.
@@ -75,18 +76,18 @@ providing insights into self-boosting behaviors.
 
 Selected Awards
 ------
-* 2023 National Scholarship for Undergraduate Students (Top 0.2% among Chinese students)
-* 2023 Finalist Award for the U.S. College Mathematical Contest in Modeling (Top 1% worldwide)
-* 2022 Toyota Boshoku Scholarship of Shanghai Jiao Tong University (Top 2% of SJTU)
-* 2022, 2023 Merit Student of Shanghai Jiao Tong University (Top 5% of SJTU)
+* National Scholarship for Undergraduate Students (Top 0.2% among Chinese students)
+* Finalist Award for the U.S. College Mathematical Contest in Modeling (Top 1% worldwide)
+* Nezha Technology Excellence Scholarship of Shanghai Jiao Tong University (Top 1% of SJTU)
+* Toyota Boshoku Excellence Scholarship of Shanghai Jiao Tong University (Top 2% of SJTU)
+* Merit Student of Shanghai Jiao Tong University (Top 5% of SJTU)
 
 
 Extracurricular Activities
 ------
 * Scholars and Achievers Club of SJTU, Core Member                                                 (_Jun. 2023 - Present_)
+* GuangFa Securities, Research Intern                                                  (_Sept. 2023 - Dec. 2023_)
 * Ernst & Young Advisory, Corporate Tax Intern                                 (_Aug. 2023 - Sept. 2023_)
-* GF Securities, Research Intern                                                  (_Sep. 2023 - Dec. 2023_)
-* Sealand Securities, Research Intern                                           (_Jun. 2023 - Sept. 2023_)
 
 Contact
 ------

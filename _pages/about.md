@@ -89,6 +89,11 @@ Extracurricular Activities
 * GuangFa Securities, Research Intern                                                  (_Sept. 2023 - Dec. 2023_)
 * Ernst & Young Advisory, Corporate Tax Intern                                 (_Aug. 2023 - Sept. 2023_)
 
+Standardized Test
+------
+* TOEFL 103(Speakling: 26/30),
+* GRE 326(V:156/170, Q:170/170, AW:3.5)
+
 Contact
 ------
 * Email: wanglei123sjtu@gmail.com

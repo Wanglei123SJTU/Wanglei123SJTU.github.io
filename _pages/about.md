@@ -76,12 +76,12 @@ providing insights into self-boosting behaviors.
 
 Selected Awards
 ------
-* National Scholarship for Undergraduate Students (Top 0.2% among Chinese students)
-* Finalist Award for the U.S. College Mathematical Contest in Modeling (Top 1% worldwide)
-* Nezha Technology Excellence Scholarship of Shanghai Jiao Tong University (Top 1% of SJTU)
-* Toyota Boshoku Excellence Scholarship of Shanghai Jiao Tong University (Top 2% of SJTU)
-* Academic Scholarship of Shanghai Jiao Tong University 
-* Merit Student of Shanghai Jiao Tong University 
+* National Scholarship for Undergraduate Students (Top 0.2% among Chinese students), 2023
+* Finalist Award for the U.S. College Mathematical Contest in Modeling (Top 1% worldwide), 2023
+* Nezha Technology Excellence Scholarship of Shanghai Jiao Tong University (Top 1% of SJTU), 2024
+* Toyota Boshoku Excellence Scholarship of Shanghai Jiao Tong University (Top 2% of SJTU), 2022
+* Academic Scholarship of Shanghai Jiao Tong University, 2024
+* Merit Student of Shanghai Jiao Tong University, 2021, 2022
 
 
 Extracurricular Activities

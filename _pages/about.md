@@ -80,8 +80,8 @@ Selected Awards
 * Finalist Award for the U.S. College Mathematical Contest in Modeling (Top 1% worldwide)
 * Nezha Technology Excellence Scholarship of Shanghai Jiao Tong University (Top 1% of SJTU)
 * Toyota Boshoku Excellence Scholarship of Shanghai Jiao Tong University (Top 2% of SJTU)
-* Academic Scholarship of Shanghai Jiao Tong University (Top 5% of SJTU)
-* Merit Student of Shanghai Jiao Tong University (Top 5% of SJTU)
+* Academic Scholarship of Shanghai Jiao Tong University 
+* Merit Student of Shanghai Jiao Tong University 
 
 
 Extracurricular Activities

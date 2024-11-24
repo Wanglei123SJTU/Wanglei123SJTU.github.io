@@ -81,7 +81,7 @@ Selected Awards
 * Nezha Technology Excellence Scholarship of Shanghai Jiao Tong University (Top 1% of SJTU), 2024
 * Toyota Boshoku Excellence Scholarship of Shanghai Jiao Tong University (Top 2% of SJTU), 2022
 * Academic Scholarship of Shanghai Jiao Tong University, 2024
-* Merit Student of Shanghai Jiao Tong University, 2021, 2022
+* Merit Student of Shanghai Jiao Tong University, 2022, 2023
 
 
 Extracurricular Activities
@@ -92,8 +92,8 @@ Extracurricular Activities
 
 Standardized Test
 ------
-* TOEFL: 103(Speakling: 26/30),
-* GRE: 326(V: 156/170, Q: 170/170, AW: 3.5)
+* TOEFL: 103 (Speakling: 26/30),
+* GRE: 326 (V: 156/170, Q: 170/170, AW: 3.5)
 
 Contact
 ------

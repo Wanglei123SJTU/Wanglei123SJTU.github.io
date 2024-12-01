@@ -13,7 +13,7 @@ You can find my CV here: [Lei's Curriculum Vitae](../Lei_CV.pdf).
 
 I am a fourth-year undergraduate student in the Department of Industrial Engineering & Management at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/). I am majoring in Industrial Engineering and minoring in Finance.
 
-Currently, I am extremely fortunate to be advised by [Prof. Zikun Ye](https://zikunye.com/) and [Prof. Hema Yoganarasimhan](https://faculty.washington.edu/hemay/) on Source Attribution in Generative LLMs. Simultaneously, I also have the greatest honor to be supervised by [Prof. Natalie Mizik](https://foster.uw.edu/faculty-research/directory/natalie-mizik/) on Promoting Equitable Hydrogen Energy Access for Disadvantaged Communities.
+Currently, I am extremely fortunate to be advised by [Prof. Zikun Ye](https://zikunye.com/) and [Prof. Hema Yoganarasimhan](https://faculty.washington.edu/hemay/) on Source Attribution in Generative LLMs. Simultaneously, I also have the greatest honor of being supervised by [Prof. Natalie Mizik](https://foster.uw.edu/faculty-research/directory/natalie-mizik/) on Promoting Equitable Hydrogen Energy Access for Disadvantaged Communities.
 
 My research interests mainly focus on Quantitative Marketing, especially the application of Large Language Models.
 
@@ -36,7 +36,7 @@ Research Experience
 information source in LLM-generated summaries, in the context of SearchGPT.
 * Developed a novel Thematic Embedding Clustering algorithm leveraging theme-driven information extraction and
 embedding similarity, aimed at reducing computational costs in Shapley value calculations.
-* Tested the efficiency of our algorithm on a large-scale Amazon review dataset, achieving approximately 50%
+* Tested the efficiency of our algorithm on a large-scale Amazon review dataset, achieving approximately 50% 
 computational savings at an MAE of 0.15 compared to baseline methods.
 
 ### Promoting Equitable Hydrogen Energy Access for Disadvantaged Communities             
@@ -98,4 +98,4 @@ Standardized Test
 Contact
 ------
 * Email: wanglei123sjtu@gmail.com
-* Wechat: Triplestone0603
+* WeChat: Triplestone0603

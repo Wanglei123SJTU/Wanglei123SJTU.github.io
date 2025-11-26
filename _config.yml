@@ -8,11 +8,11 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Lei Wang 汪磊"
+title                    : "Lei Wang (汪磊)"
 title_separator          : "-"
 name                     : &name "Lei Wang"
-description              : &description "Senior, majoring in Industrial Engineering, minoring in Finance"
-url                      : https://wanglei123sjtu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "Ph.D. student in Quantitative Marketing at the Foster School of Business, University of Washington"
+url                      : &https://wanglei123sjtu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Wanglei123SJTU.github.io"
 
@@ -24,8 +24,8 @@ author:
   avatar           : "Wanglei_pic.png"
   name             : "Lei Wang"
   pronouns         : # example: "she/her"  
-  bio              : "Senior majoring in Industrial Engineering, minoring in Finance, SJTU"
-  location         : "Shanghai"
+  bio              : "Ph.D. student in Quantitative Marketing at the Foster School of Business, University of Washington"
+  location         : "Seattle"
   # employer         : "Red Brick University"
   uri              : https://wanglei123sjtu.github.io
   email            : "wanglei123@sjtu.edu.cn" 

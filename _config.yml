@@ -11,7 +11,7 @@ locale: "en-US"
 title: "Lei Wang (汪磊)"
 title_separator: "-"
 name: "Lei Wang"
-description: "Ph.D. student in Quantitative Marketing at the Foster School of Business, University of Washington"
+description: "Ph.D. student at the Foster School of Business, University of Washington"
 url: "https://wanglei123sjtu.github.io"  # the base hostname & protocol for your site
 baseurl: ""                               # the subpath of your site, e.g. "/blog"
 repository: "Wanglei123SJTU.github.io"

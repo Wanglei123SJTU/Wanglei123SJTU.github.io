@@ -12,7 +12,7 @@ title                    : "Lei Wang (汪磊)"
 title_separator          : "-"
 name                     : &name "Lei Wang"
 description              : &description "Ph.D. student in Quantitative Marketing at the Foster School of Business, University of Washington"
-url                      : &https://wanglei123sjtu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://wanglei123sjtu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Wanglei123SJTU.github.io"
 
@@ -27,7 +27,7 @@ author:
   bio              : "Ph.D. student in Quantitative Marketing at the Foster School of Business, University of Washington"
   location         : "Seattle"
   # employer         : "Red Brick University"
-  uri              : https://wanglei123sjtu.github.io
+  uri              : "https://wanglei123sjtu.github.io"
   email            : "wanglei123@sjtu.edu.cn" 
 
   # Academic websites

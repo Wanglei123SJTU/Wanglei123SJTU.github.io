@@ -7,28 +7,27 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
-title                    : "Lei Wang (汪磊)"
-title_separator          : "-"
-name                     : &name "Lei Wang"
-description              : &description "Ph.D. student in Quantitative Marketing at the Foster School of Business, University of Washington"
-url                      : "https://wanglei123sjtu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "Wanglei123SJTU.github.io"
+locale: "en-US"
+title: "Lei Wang (汪磊)"
+title_separator: "-"
+name: "Lei Wang"
+description: "Ph.D. student in Quantitative Marketing at the Foster School of Business, University of Washington"
+url: "https://wanglei123sjtu.github.io"  # the base hostname & protocol for your site
+baseurl: ""                               # the subpath of your site, e.g. "/blog"
+repository: "Wanglei123SJTU.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  # Biographic information
-  avatar           : "Wanglei_pic.png"
-  name             : "Lei Wang"
-  pronouns         : # example: "she/her"  
-  bio              : "Ph.D. student in Quantitative Marketing at the Foster School of Business, University of Washington"
-  location         : "Seattle"
-  # employer         : "Red Brick University"
-  uri              : "https://wanglei123sjtu.github.io"
-  email            : "wanglei123@sjtu.edu.cn" 
+  avatar: "Wanglei_pic.png"
+  name: "Lei Wang"
+  pronouns:
+  bio: "Ph.D. student in Quantitative Marketing at the Foster School of Business, University of Washington"
+  location: "Seattle"
+  # employer:
+  uri: "https://wanglei123sjtu.github.io"
+  email: "wanglei123@sjtu.edu.cn"
 
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile

@@ -1,34 +1,33 @@
 ---
 permalink: /
-title: "About"
+title: "Hi! This is Lei Wang."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
+Hi! This is Lei Wang. I am a first-year Ph.D. student in Quantitative Marketing at the Foster School of Business, University of Washington.
 
-I am a first-year Ph.D. student in Quantitative Marketing at the [Foster School of Business, University of Washington](https://foster.uw.edu/). I am extremely fortunate to be advised by [Prof. Zikun Ye](https://zikunye.com/) and [Prof. Natalie Mizik](https://foster.uw.edu/faculty-research/directory/natalie-mizik/).
+My research explores how large language models and machine learning can advance empirical research in consumer behavior and market design. My broader interests include quantitative marketing, applied machine learning, survey methodology, and text-as-data methods. I am advised by [Prof. Zikun Ye](https://zikunye.com/) and [Prof. Natalie Mizik](https://foster.uw.edu/faculty-research/directory/natalie-mizik/).
 
-My research interests lie in quantitative marketing, with a current emphasis on large language models, machine learning, and their applications in understanding consumer behavior and market design.
+## Education
 
-Previously, I received my B.Eng. in Industrial Engineering (minor in Finance) from [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/).
+- **University of Washington, Foster School of Business**  
+  Ph.D. in Quantitative Marketing (2024 – present)
 
-## Working Papers
-* **Efficient Inference Using Large Language Models with Limited Human Data: Fine-Tuning then Rectification**, with Zikun Ye and Jinglong Zhao. [[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5763184)]
+- **Shanghai Jiao Tong University**  
+  B.Eng. in Industrial Engineering (Minor in Finance), 2020  
+  **Ranking: 1/55**  
+  **Honors: National Scholarship of China**
+
+## Working Paper
+
+1. **Efficient Inference Using Large Language Models with Limited Human Data: Fine-Tuning then Rectification**,  
+   with Zikun Ye and Jinglong Zhao.  
+   *Manuscript available:* [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5763184)
 
 ## Contact
-* Email: wanglei123sjtu@gmail.com  
-* WeChat: Triplestone0603
 
-
-
-<!--You can find my CV here: [Lei's Curriculum Vitae](../Lei_CV.pdf).-->
-
-<!-- 
-<h1>Website Offline</h1>
-<p>This website is currently offline.</p>
--->
-
-
-
+- **Email:** wanglei123sjtu@gmail.com  
+- **WeChat:** Triplestone0603

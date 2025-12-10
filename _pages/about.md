@@ -24,7 +24,7 @@ My research explores how large language models and machine learning can advance 
 
 1. [Efficient Inference Using Large Language Models with Limited Human Data: Fine-Tuning then Rectification](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5763184), with Zikun Ye and Jinglong Zhao.  
 
-## Honors
+## Honor
 
 - **National Scholarship of China**
 

@@ -17,8 +17,8 @@ My research explores how large language models and machine learning can advance 
   Ph.D. in Quantitative Marketing (2025 – present)
 
 - **Shanghai Jiao Tong University**  
-  B.Eng. in Industrial Engineering (Minor in Finance) (2021 – 2025)  
-  Ranking: 1/55
+  B.Eng. in Industrial Engineering, with a Minor in Finance (2021–2025)  
+  Ranking: 1/55  
 
 ## Working Paper
 
@@ -27,6 +27,7 @@ My research explores how large language models and machine learning can advance 
 ## Honor
 
 - **National Scholarship of China**
+- **Excellent Graduate of Shanghai Jiao Tong University**
 
 
 ## Contact

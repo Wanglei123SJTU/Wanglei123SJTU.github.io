@@ -19,13 +19,17 @@ My research explores how large language models and machine learning can advance 
 - **Shanghai Jiao Tong University**  
   B.Eng. in Industrial Engineering (Minor in Finance), 2020  
   **Ranking: 1/55**  
-  **Honors: National Scholarship of China**
 
 ## Working Paper
 
 1. **Efficient Inference Using Large Language Models with Limited Human Data: Fine-Tuning then Rectification**,  
    with Zikun Ye and Jinglong Zhao.  
    *Manuscript available:* [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5763184)
+
+## Honors
+
+- **National Scholarship of China**
+
 
 ## Contact
 

@@ -7,24 +7,23 @@ redirect_from:
   - /about.html
 ---
 
-Hi! This is Lei Wang. I am a first-year Ph.D. student in Quantitative Marketing at the Foster School of Business, University of Washington.
+I am a first-year Ph.D. student in Quantitative Marketing at the Foster School of Business, University of Washington.
 
 My research explores how large language models and machine learning can advance empirical research in consumer behavior and market design. My broader interests include quantitative marketing, applied machine learning, survey methodology, and text-as-data methods. I am advised by [Prof. Zikun Ye](https://zikunye.com/) and [Prof. Natalie Mizik](https://foster.uw.edu/faculty-research/directory/natalie-mizik/).
 
 ## Education
 
 - **University of Washington, Foster School of Business**  
-  Ph.D. in Quantitative Marketing (2024 – present)
+  Ph.D. in Quantitative Marketing (2025 – present)
 
 - **Shanghai Jiao Tong University**  
-  B.Eng. in Industrial Engineering (Minor in Finance), 2020  
-  **Ranking: 1/55**  
+  B.Eng. in Industrial Engineering (Minor in Finance) (2021 – 2025)  
+  Ranking: 1/55
 
 ## Working Paper
 
-1. **Efficient Inference Using Large Language Models with Limited Human Data: Fine-Tuning then Rectification**,  
+1. **[Efficient Inference Using Large Language Models with Limited Human Data: Fine-Tuning then Rectification](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5763184)**,  
    with Zikun Ye and Jinglong Zhao.  
-   *Manuscript available:* [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5763184)
 
 ## Honors
 

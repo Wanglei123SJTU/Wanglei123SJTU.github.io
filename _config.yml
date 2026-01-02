@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale: "en-US"
-title: "Lei Wang – PhD Student, University of Washington"
+title: "Home"
 title_separator: "-"
-name: "Lei Wang"
+name: "Lei Wang 汪磊"
 description: "Ph.D. student at the Foster School of Business, University of Washington"
 url: "https://wanglei123sjtu.github.io"  # the base hostname & protocol for your site
 baseurl: ""                               # the subpath of your site, e.g. "/blog"

@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi! This is Lei Wang."
+title: "Hi! This is Lei Wang 汪磊."
 author_profile: true
 redirect_from: 
   - /about/

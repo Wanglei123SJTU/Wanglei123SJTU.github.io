@@ -29,8 +29,8 @@ My research explores how large language models and machine learning can advance 
 
 ## Honors
 
-- **National Scholarship of China**
-- **Excellent Graduate of Shanghai Jiao Tong University**
+- National Scholarship of China
+- Excellent Graduate of Shanghai Jiao Tong University
 
 
 ## Contacts

@@ -35,5 +35,5 @@ My research explores how large language models and machine learning can advance 
 
 ## Contacts
 
-- **Email:** wanglei123sjtu@gmail.com  
+- **Email:** lei0603@uw.edu 
 - **WeChat:** Triplestone0603

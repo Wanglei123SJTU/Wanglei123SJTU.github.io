@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efficient Inference Using Large Language Models with Limited Human Data: Fine-Tuning then Rectification - Feedback Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400..800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Rethink Sans Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #000;
+      background: #f9fafb;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #111827;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #374151;
+    }
+
+    h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: #4b5563;
+    }
+
+    .metadata {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: #f9fafb;
+      border-radius: 8px;
+    }
+
+    .metadata-item {
+      font-size: 0.875rem;
+    }
+
+    .metadata-label {
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .metadata-value {
+      color: #6b7280;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2rem 0;
+    }
+
+    .overall-feedback {
+      background: #f9fafb;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .comment-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      background: white;
+    }
+
+    .comment-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .comment-number {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      font-weight: 600;
+    }
+
+    .comment-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #111827;
+      flex: 1;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.125rem 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      border-radius: 9999px;
+      border: 1px solid;
+    }
+
+    .badge-pending {
+      background: #f3f4f6;
+      color: #6b7280;
+      border-color: #d1d5db;
+    }
+
+    .badge-done {
+      background: #d1fae5;
+      color: #065f46;
+      border-color: #6ee7b7;
+    }
+
+    .badge-dismissed {
+      background: #fee2e2;
+      color: #991b1b;
+      border-color: #fca5a5;
+    }
+
+    .badge-important {
+      background: rgba(70, 70, 200, 0.1);
+      color: rgba(70, 70, 200, 1);
+      border-color: rgba(70, 70, 200, 0.2);
+    }
+
+    .badge-nitpick {
+      background: #f3f4f6;
+      color: #6b7280;
+      border-color: #d1d5db;
+    }
+
+    .timestamp {
+      font-size: 0.7rem;
+      opacity: 0.8;
+    }
+
+    .comment-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .quote {
+      font-size: 0.875rem;
+      font-style: italic;
+      color: #6b7280;
+      border-left: 2px solid #d1d5db;
+      padding-left: 0.75rem;
+      border-radius: 0 0.25rem 0.25rem 0;
+    }
+
+    .message {
+      font-size: 0.875rem;
+      color: #374151;
+    }
+
+    .status-section {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid #f3f4f6;
+    }
+
+    /* Markdown content styling */
+    .message p {
+      margin: 0.5rem 0;
+    }
+
+    .message ul,
+    .message ol {
+      margin: 0.5rem 0;
+      padding-left: 1.5rem;
+    }
+
+    .message li {
+      margin: 0.25rem 0;
+    }
+
+    .message code {
+      background: #f3f4f6;
+      padding: 0.125rem 0.375rem;
+      border-radius: 0.25rem;
+      font-size: 0.85em;
+      font-family: 'Courier New', monospace;
+    }
+
+    .message pre {
+      background: #1e293b;
+      color: #e2e8f0;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+
+    .message pre code {
+      background: none;
+      padding: 0;
+      color: inherit;
+    }
+
+    .message blockquote {
+      border-left: 4px solid #d1d5db;
+      padding-left: 1rem;
+      margin: 0.75rem 0;
+      font-style: italic;
+      color: #6b7280;
+    }
+
+    .message table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0;
+    }
+
+    .message th,
+    .message td {
+      border: 1px solid #e5e7eb;
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+    }
+
+    .message th {
+      background: #f9fafb;
+      font-weight: 600;
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .container {
+        box-shadow: none;
+        padding: 1rem;
+      }
+
+      .comment-card {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Efficient Inference Using Large Language Models with Limited Human Data: Fine-Tuning then Rectification</h1>
+      <div class="metadata">
+        <div class="metadata-item">
+          <span class="metadata-label">Date:</span>
+          <span class="metadata-value">2026/2/3 11:28:41</span>
+        </div>
+        <div class="metadata-item">
+          <span class="metadata-label">Domain:</span>
+          <span class="metadata-value">social_sciences/economics</span>
+        </div>
+        <div class="metadata-item">
+          <span class="metadata-label">Taxonomy:</span>
+          <span class="metadata-value">academic/research_paper</span>
+        </div>
+        <div class="metadata-item">
+          <span class="metadata-label">Filter:</span>
+          <span class="metadata-value">Active comments</span>
+        </div>
+      </div>
+    </header>
+
+    
+    <section class="overall-feedback">
+      <h2>Overall Feedback</h2>
+      <div class="message">
+        <p>Here are some high-level reactions to the document.</p>
+<p><strong>Theoretical consistency of the variance optimization</strong></p>
+<p>The derivation of the optimal allocation relies on an asymptotic simplification that might introduce tension with the finite-sample goals of the paper. Section 4.1 decomposes the variance into two terms: $\frac{1}{n-s}\mathrm{Var}(Y-f^{(s)}(X))$ and $\frac{1}{m}\mathrm{Var}(f^{(s)}(X))$. The subsequent optimization problem (3) and Theorem 4.1 proceed by minimizing only the first term, justified by the assumption that &quot;$m$ is large.&quot;</p>
+<p>However, fine-tuning modifies the predictor $f^{(s)}$, which necessarily changes the second term, $\frac{1}{m}\mathrm{Var}(f^{(s)}(X))$. If the unlabeled set size $m$ is finite (as it is in the Wine Reviews experiment), ignoring this term implies that the derived $s^*$ may not actually minimize the true calculable variance. It would be compelling to see either a formal finite-$m$ analog to the optimization problem or empirical evidence demonstrating that the variations in the second term are indeed negligible compared to the reduction in the first term across the relevant range of $s$.</p>
+<p><strong>Accounting for the label cost of scaling law estimation</strong></p>
+<p>The central claim of efficiency rests on the ability to pinpoint the optimal split $s^*$ using the scaling law parameters $(a, \alpha, b)$. Currently, the empirical analysis in Section 6.2 and 6.3 treats these parameters as fixed inputs derived from a separate 10,000-sample dataset. This prevents a deployment-faithful evaluation of the method&#x27;s efficiency: the label cost of estimating the scaling curve is excluded from the experimental budget, yet obtaining these estimates is a prerequisite for the method.</p>
+<p>To robustly support the &quot;cost savings&quot; claims in the Abstract and Table 3, the evaluation would benefit from an end-to-end simulation where the scaling law is learned <em>within</em> the allocated budget $n$ (perhaps using the ramp-up procedure mentioned in Appendix B). Comparing this fully loaded cost against the baselines is necessary to demonstrate that the method generates net savings when starting from scratch (cold start) rather than relying on an oracle.</p>
+<p><strong>Sensitivity of the allocation rule to estimation error</strong></p>
+<p>Related to the estimation of scaling parameters, there is a question regarding the sensitivity of the decision rule $s^<em>(\hat a, \hat b, \hat\alpha)$. Since the objective function in Figure 2a is U-shaped, the cost of missing the optimal $s^</em>$ could be significant. In a realistic setting with small valid sets, estimations of the scaling exponent $\hat\alpha$ are likely to be noisy.</p>
+<p>The manuscript cites Appendix D.1 regarding concentration, but it would be valuable to see a direct sensitivity analysis of the main methodological prescription. Specifically, how much does $s^<em>$ shift given standard errors in $\hat\alpha$ or $\hat b$? If the allocation rule relies on precise parameter estimates that are difficult to obtain with small $n$, the &quot;optimal&quot; allocation might be theoretically sound but practically risky. A bootstrap approach to selecting a conservative $s^</em>$ might strengthen the practical applicability of the framework.</p>
+<p><strong>Clarifying the performance gap between MSE and residual variance</strong></p>
+<p>The paper reports a striking performance gap between the proposed loss function and the standard MSE baseline (18–54% variance reduction in Table 3). However, Remark 1 notes that with additive shifts and ideal training, minimizing MSE and maximizing residual variance should essentially lead to the same solution. This raises a question about the driver of the empirical gap: is the proposed loss function structurally superior, or is the MSE baseline under-performing due to regularization, early stopping, or architecture constraints?</p>
+<p>To firmly establish the &quot;new loss&quot; as a general principle for train-for-inference contexts, it is important to document <em>why</em> the MSE baseline fails to drive down residual variance to the same degree. Ensuring the MSE baseline is &quot;best-effort&quot; (e.g., capable of learning the correct mean shift via an unregularized intercept/bias term) would protect the results from being interpreted as a fix for a specific constrained training setup rather than a fundamental theoretical advantage.</p>
+<p><strong>Operationalizing the M-estimation extension</strong></p>
+<p>Section 5 outlines the extension to M-estimation effectively at a theoretical level, particularly regarding the D-optimal/trace scalarizations. However, as currently presented, the method may be difficult for a reader to implement. Unlike the mean estimation case, where the objective is clear, minimizing the determinant or trace of a covariance matrix involving $\psi(X, f^{(s)}(X))$ presents non-trivial challenges for stochastic gradient training, particularly regarding numerical stability and the unknown nature of $\theta^*$. Expanding this section to provide an explicit algorithmic recipe—perhaps involving plug-in estimates for $\hat\theta$ or an iterative procedure—would match the usability of the earlier sections.</p>
+      </div>
+      <div class="status-section">
+        <span class="badge badge-pending">Pending</span>
+      </div>
+    </section>
+    <hr>
+    
+
+    <section class="comments">
+      <h2>Detailed Comments (12)</h2>
+
+      
+        <div class="comment-card">
+          <div class="comment-header">
+            <span class="comment-number">#1</span>
+            <span class="comment-title">Validation of allocation rule relies on external data</span>
+            
+            <span class="badge badge-pending">Pending</span>
+          </div>
+          <div class="comment-content">
+            
+            <div>
+              <div class="quote">
+                <p>Our empirical analysis validates the fine-tuning scaling law and confirms that our proposed optimal allocation rule reliably identifies the optimal sample allocation.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="message">
+                <p>The concern is that the abstract phrase “confirms that our proposed optimal allocation rule reliably identifies the optimal sample allocation” may be read as an end-to-end validation under a limited-data budget, whereas Section 6.3 in fact uses scaling-law parameters $(\hat a,\hat\alpha,\hat b)$ that were pre-estimated from a separate set of 10,000 labeled reviews. In a real “limited human data” application, one would typically have to estimate $(a,\alpha,b)$ from within the same budget $n$ (for example, via the ramp-up procedure in Appendix B), and the stability of $s^*$ under that constraint is not directly tested empirically. It could help readers if the abstract or the beginning of Section 6 explicitly stated that the allocation-validation experiment assumes scaling parameters calibrated on external data, and that robustness to estimating these parameters from the limited budget is argued theoretically and via the scaling-law fit rather than demonstrated in a fully budget-internal experiment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment-card">
+          <div class="comment-header">
+            <span class="comment-number">#2</span>
+            <span class="comment-title">Theoretical distinction between MSE and Variance objectives</span>
+            
+            <span class="badge badge-pending">Pending</span>
+          </div>
+          <div class="comment-content">
+            
+            <div>
+              <div class="quote">
+                <p>Unlike the conventional objective that minimizes the mean squared prediction errors, we propose to minimize the variance of the prediction errors as the fine-tuning objective, which is optimal for the downstream rectification stage.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="message">
+                <p>Statement “Unlike the conventional objective that minimizes the mean squared prediction errors, we propose to minimize the variance of the prediction errors … which is optimal for the downstream rectification stage” might initially suggest a fundamental theoretical divergence between MSE and residual-variance minimization. After reading Remark 1, it is clear that in model classes with a free additive shift and in large samples, the two losses have essentially the same population minimizer, and that the advantage of the variance loss is in its direct alignment with the PPI variance expression and its practical behavior under finite-sample, regularized, or constrained training. To preempt confusion for readers steeped in classical OLS theory, it could be helpful if the abstract or early in Section 4.1 briefly acknowledged this asymptotic equivalence and emphasized that the gain from the variance objective is practical/task-aligned rather than a different population solution under standard regression assumptions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment-card">
+          <div class="comment-header">
+            <span class="comment-number">#3</span>
+            <span class="comment-title">Incorrect independence justification in variance derivation</span>
+            
+            <span class="badge badge-pending">Pending</span>
+          </div>
+          <div class="comment-content">
+            
+            <div>
+              <div class="quote">
+                <p>where the third equality is because $(Y_i - f^{(s)}(\boldsymbol{X}_i))$ and $f^{(s)}(\tilde{\boldsymbol{X}}_j)$ are independent.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="message">
+                <p>At first, the statement “where the third equality is because ((Y_i - f^{(s)}(\boldsymbol{X}_i))) and (f^{(s)}(\tilde{\boldsymbol{X}}_j)) are independent” made me think that you were asserting unconditional independence between these two terms, even though the fine-tuned predictor (f^{(s)}) is itself obtained from data and hence random. Then I understood that in this variance derivation you are effectively working conditional on the realized predictor (f^{(s)}) (as is standard in prediction-powered inference and as you make explicit later in Proposition E.1), so that the only randomness comes from the labeled PPI subset and the unlabeled sample, which are independent. In that conditional view the variance decomposition and Equation (2) are correct. It might nonetheless be helpful to signal this conditioning explicitly—for example, by stating that the independence claim is conditional on (f^{(s)}) or by writing the variance as (\operatorname{Var}(\cdot \mid f^{(s)}))—to avoid readers mistakenly interpreting the argument as relying on unconditional independence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment-card">
+          <div class="comment-header">
+            <span class="comment-number">#4</span>
+            <span class="comment-title">Mismatch between motivating business problem and statistical task</span>
+            
+            <span class="badge badge-pending">Pending</span>
+          </div>
+          <div class="comment-content">
+            
+            <div>
+              <div class="quote">
+                <p>We validate our framework through an empirical study using the Wine Reviews dataset to estimate the average ratings in the population. This task mirrors a day-to-day challenge faced by product teams. When retailers select which stock-keeping units (SKUs) to sell in their stores, they usually need to understand the perceived product quality at scale</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="message">
+                <p>At first reading, the link you draw between the empirical task and the business motivation can feel tighter than it really is. You empirically study estimation of a single population mean rating, but the text immediately frames this as “mirroring” SKU selection, which in practice is driven by heterogeneity and ranking across items (roughly, conditional quantities like $\mathbb{E}[Y\mid X_i]$) rather than by a global average alone.</p>
+<p>Later sections make clear that (i) the empirical example is a stylized aggregate-quality measurement problem, and (ii) your general $M$-estimation framework, including the regression and choice-model examples in Section 5, is what connects most directly to assortment and SKU-level decisions. To avoid potential misinterpretation, it would help if the introductory passage here framed the wine-rating application more explicitly as an instance of “measuring aggregate perceived quality efficiently under a tight labeling budget,” and reserved the SKU-selection discussion for the broader $M$-estimation setting, where the link to ranking and selection is more direct.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment-card">
+          <div class="comment-header">
+            <span class="comment-number">#5</span>
+            <span class="comment-title">Incorrect variance derivation and independence assumption</span>
+            
+            <span class="badge badge-pending">Pending</span>
+          </div>
+          <div class="comment-content">
+            
+            <div>
+              <div class="quote">
+                <p>$$
+\begin{aligned}
+&amp; \mathrm{E}\left[(\widehat{\mu}-\mathrm{E}[Y])^{2}\right] \
+= &amp; \mathrm{E}\left[\left(\frac{1}{n-s} \sum_{i=1}^{n-s}\left(Y_{i}-f^{(s)}\left(\boldsymbol{X}<em>{i}\right)\right)+\frac{1}{m} \sum</em>{j=1}^{m} f^{(s)}\left(\tilde{\boldsymbol{X}}<em>{j}\right)-\mathrm{E}[Y]\right)^{2}\right] \
+= &amp; \mathrm{E}\left[\left(\frac{1}{n-s} \sum</em>{i=1}^{n-s}\left(Y_{i}-f^{(s)}\left(\boldsymbol{X}<em>{i}\right)+\mathrm{E}\left[f^{(s)}(\boldsymbol{X})\right]-\mathrm{E}[Y]\right)+\frac{1}{m} \sum</em>{j=1}^{m}\left(f^{(s)}\left(\tilde{\boldsymbol{X}}<em>{j}\right)-\mathrm{E}\left[f^{(s)}(\boldsymbol{X})\right]\right)\right)^{2}\right] \
+= &amp; \frac{1}{n-s} \sum</em>{i=1}^{n-s} \mathrm{E}\left[\left(Y_{i}-f^{(s)}\left(\boldsymbol{X}<em>{i}\right)+\mathrm{E}\left[f^{(s)}(\boldsymbol{X})\right]-\mathrm{E}[Y]\right)^{2}\right]+\frac{1}{m} \sum</em>{j=1}^{m} \mathrm{E}\left[\left(f^{(s)}\left(\tilde{\boldsymbol{X}}_{j}\right)-\mathrm{E}\left[f^{(s)}(\boldsymbol{X})\right]\right)^{2}\right] \
+= &amp; \frac{1}{n-s} \operatorname{Var}\left(Y-f^{(s)}(\boldsymbol{X})\right)+\frac{1}{m} \operatorname{Var}\left(f^{(s)}(\boldsymbol{X})\right)
+\end{aligned}
+$$</p>
+<p>where the third equality is because $\left(Y_{i}-f^{(s)}\left(\boldsymbol{X}<em>{i}\right)\right)$ and $f^{(s)}\left(\tilde{\boldsymbol{X}}</em>{j}\right)$ are independent.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="message">
+                <p>The variance derivation in Section 4.1 raised two related issues for me.</p>
+<p>First, in the displayed calculation, the third equality appears to have incorrect coefficients. If we write
+(A_i = Y_i - f^{(s)}(X_i) + \mathrm{E}[f^{(s)}(X)] - \mathrm{E}[Y]),
+then
+[
+\mathrm{E}\Big[\big(\tfrac{1}{n-s}\sum_{i=1}^{n-s} A_i\big)^2\Big]
+= \tfrac{1}{(n-s)^2}\sum_{i,k}\mathrm{E}[A_iA_k].
+]
+Under independence, this is (\operatorname{Var}(A)/(n-s)). The third line of your display instead has (\frac{1}{n-s}\sum_{i}\mathrm{E}[A_i^2]), which evaluates to (\operatorname{Var}(A)). To be consistent with the final line, the prefactor in the third line should be (1/(n-s)^2) (and analogously (1/m^2) for the second term).</p>
+<p>Second, the sentence “the third equality is because ((Y_i - f^{(s)}(X_i))) and (f^{(s)}(\tilde X_j)) are independent” seems to rely on viewing the fine‑tuned predictor (f^{(s)}) as fixed. Conditional on the training data that produced (f^{(s)}), the PPI labeled and unlabeled samples are independent, so the cross‑terms do vanish and the standard PPI variance formula follows. If, however, one were to consider variance unconditionally over both PPI data and the randomness in fine‑tuning, additional covariance terms involving the randomness of the mean prediction (E_X[f^{(s)}(X)]) would appear. It would be helpful to clarify explicitly that the variance expression you use is the variance conditional on the realized fitted model (and fine‑tuning data), in line with the PPI literature.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment-card">
+          <div class="comment-header">
+            <span class="comment-number">#6</span>
+            <span class="comment-title">Incorrect independence assumption in variance derivation</span>
+            
+            <span class="badge badge-pending">Pending</span>
+          </div>
+          <div class="comment-content">
+            
+            <div>
+              <div class="quote">
+                <p>where the third equality is because $(Y_i - f^{(s)}(\boldsymbol{X}_i))$ and $f^{(s)}(\tilde{\boldsymbol{X}}_j)$ are independent.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="message">
+                <p>The variance derivation in Section 4.1 attributes the decomposition
+[
+\operatorname{Var}(\widehat\mu) = \frac{1}{n-s}\operatorname{Var}(Y-f^{(s)}(X)) + \frac{1}{m}\operatorname{Var}(f^{(s)}(X))
+]
+to the fact that $(Y_i - f^{(s)}(\boldsymbol{X}_i))$ and $f^{(s)}(\tilde{\boldsymbol{X}}_j)$ are independent. This point can be conceptually delicate because $f^{(s)}$ itself is a random object trained on a random fine‑tuning sample.</p>
+<p>If variance is taken unconditionally over both the PPI/unlabeled samples and the randomness in the training of $f^{(s)}$, then $(Y_i - f^{(s)}(\boldsymbol{X}_i))$ and $f^{(s)}(\tilde{\boldsymbol{X}}<em>j)$ are only conditionally independent given $f^{(s)}$, not independent in the joint probability space. In that fully unconditional view, extra covariance terms involving the random mean prediction $\mu</em>{f^{(s)}} = \mathrm{E}[f^{(s)}(X)\mid f^{(s)}]$ appear, and one obtains
+[
+\operatorname{Var}(\widehat\mu)
+= \frac{1}{n-s}\operatorname{Var}(Y-f^{(s)}(X)) + \frac{1}{m}\operatorname{Var}(f^{(s)}(X))</p>
+<ul>
+<li>\Big(\frac{1}{n-s} + \frac{1}{m}\Big)\operatorname{Var}(\mu_{f^{(s)}}).
+]
+In this sense, your equation (2) corresponds to an upper bound on the unconditional variance.</li>
+</ul>
+<p>On the other hand, if one follows the usual PPI convention and analyzes $\operatorname{Var}(\widehat\mu)$ <em>conditional</em> on the realized fine‑tuned model $f^{(s)}$, then the independence claim is correct and the decomposition holds exactly with conditional variances. In that case it would be helpful to make the conditioning explicit (both in Section 4.1 and in Proposition E.1), or to clarify that variance and expectations are taken with respect to the sampling of $(X,Y)$ and $\tilde X$ for a given $f^{(s)}$. Otherwise, readers may interpret equation (2) as an unconditional identity and be puzzled by the independence step.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment-card">
+          <div class="comment-header">
+            <span class="comment-number">#7</span>
+            <span class="comment-title">Notation conflict in Linear Regression example</span>
+            
+            <span class="badge badge-pending">Pending</span>
+          </div>
+          <div class="comment-content">
+            
+            <div>
+              <div class="quote">
+                <p>Note that in our LLM framework, $X$ typically denotes the raw textual query given to LLMs. Here, with a slight abuse of notation, we let $\boldsymbol{X}$ be the feature vectors extracted from the text, e.g., product profile and price.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="message">
+                <p>At first, the note in Example 4 that “in our LLM framework, $X$ typically denotes the raw textual query” but that “here… we let $\boldsymbol{X}$ be the feature vectors extracted from the text” made me wonder what exactly is being used as the input to $f^{(s)}$ in the $M$-estimation/PPI formulation, and how this relates to the covariates in the loss $l(\boldsymbol{X},Y;\boldsymbol{\theta})$. Then I understood that $X$ is meant to stand for the model’s input representation, which in applications like linear regression can be a feature vector (possibly obtained from the raw text), and that $f^{(s)}$ should be interpreted as the full surrogate mapping from this representation to $Y$, so the mathematics is consistent.</p>
+<p>Given that you explicitly acknowledge a “slight abuse of notation” here, it might still help readers if you added a brief clarification (either in Section 3 or just before/after Example 4) that in such examples the symbol $X$ is being overloaded: the underlying raw text $T$ can first be mapped to features $\phi(T)$, and it is this feature representation (still denoted $X$) that serves both as the covariate in $l(\boldsymbol{X},Y;\boldsymbol{\theta})$ and as the input to $f^{(s)}(\boldsymbol{X})$ in the prediction-powered $M$-estimator.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment-card">
+          <div class="comment-header">
+            <span class="comment-number">#8</span>
+            <span class="comment-title">Conflation of estimator and estimand</span>
+            
+            <span class="badge badge-pending">Pending</span>
+          </div>
+          <div class="comment-content">
+            
+            <div>
+              <div class="quote">
+                <p>implies that $\boldsymbol{\theta}=\mathrm{E}\left[\boldsymbol{X} \boldsymbol{X}^{\top}\right]^{-1} \mathrm{E}[\boldsymbol{X} Y]$, which is the population ordinary least squares estimator.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="message">
+                <p>The sentence refers to $\boldsymbol{\theta} = \mathrm{E}[\boldsymbol{X}\boldsymbol{X}^{\top}]^{-1}\mathrm{E}[\boldsymbol{X}Y]$ as “the population ordinary least squares estimator.” In standard usage, that quantity is the population OLS parameter (or best linear predictor), while the OLS estimator is its sample analog, a random statistic based on $(\mathbf{X},\mathbf{Y})$. To avoid any minor confusion between estimator and estimand, it would be clearer to describe this object explicitly as the population regression quantity that the sample OLS estimator targets.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment-card">
+          <div class="comment-header">
+            <span class="comment-number">#9</span>
+            <span class="comment-title">Clarity of consistency argument for M-estimator</span>
+            
+            <span class="badge badge-pending">Pending</span>
+          </div>
+          <div class="comment-content">
+            
+            <div>
+              <div class="quote">
+                <p>It is easy to see that $\widehat{\boldsymbol{\theta}}$ as defined in (7) is a consistent estimator. To see this, we focus on the right-hand side of (7) when both $(n-s) \rightarrow+\infty$ and $m \rightarrow+\infty$. ... where the equality is because $\boldsymbol{X}<em>{i}$ from the small labeled dataset and $\tilde{\boldsymbol{X}}</em>{j}$ from the large unlabeled dataset are sampled from the same distribution. Since $l$ has a unique minimizer, Theorem 2.7 of Newey and McFadden [1994] ensures that $\widehat{\boldsymbol{\theta}}$ is consistent.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="message">
+                <p>The consistency argument for $\widehat{\boldsymbol{\theta}}$ in Section 5 is quite compressed. The text shows that, for each fixed $\boldsymbol{\theta}$, the sample criterion in (7) converges in probability to $E[l(\boldsymbol{X},Y;\boldsymbol{\theta})]$, and then invokes Theorem 2.7 of Newey and McFadden (1994) together with uniqueness of the minimizer of $E[l(\boldsymbol{X},Y;\boldsymbol{\theta})]$.</p>
+<p>However, consistency of the argmin typically requires a <em>uniform</em> law of large numbers over $\boldsymbol{\theta}$, not just pointwise convergence. Moreover, the M-estimation criterion depends on the fine-tuned predictor $f^{(s)}$, which is itself estimated from data. In your setup, this first-stage data are disjoint from the $(\boldsymbol{X}_i,Y_i)$ and $\tilde{\boldsymbol{X}}_j$ used in (7), so it is natural to condition on the trained $f^{(s)}$ and treat it as fixed in the M-estimation step. Under that interpretation, standard uniform LLN and identification conditions on $l(\cdot)$ (as in Newey–McFadden’s theorem) are sufficient to obtain consistency, and the population limit of the criterion is still $E[l(\boldsymbol{X},Y;\boldsymbol{\theta})]$ for any realization of $f^{(s)}$.</p>
+<p>It would help the reader if this conditioning argument and the required “standard regularity conditions” were stated explicitly. In particular, clarifying that the consistency claim is made for a fixed choice of $s$ (and hence a fixed predictor trained on independent data), and that you rely on the uniform-LLN assumptions in Theorem 2.7, would make the logical link between your sketch and the theorem much clearer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment-card">
+          <div class="comment-header">
+            <span class="comment-number">#10</span>
+            <span class="comment-title">Justification for ignoring the second variance term</span>
+            
+            <span class="badge badge-pending">Pending</span>
+          </div>
+          <div class="comment-content">
+            
+            <div>
+              <div class="quote">
+                <p>In the case when m is much larger than n-s, the second term can be ignored, and we focus our attention primarily on the first term.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="message">
+                <p>The step where the asymptotic variance is simplified by discarding the term
+[
+\frac{1}{m}\operatorname{Var}\big(\boldsymbol{\psi}(\tilde{\boldsymbol{X}},f^{(s)}(\tilde{\boldsymbol{X}});\boldsymbol{\theta}^*)\big)
+]
+is currently justified only by the condition $m \gg n-s$. In general, however, the relative importance of the two variance components depends on both sample sizes and their magnitudes. A natural scalar measure of the ratio of their contributions is of the form
+[
+\frac{|\tfrac{1}{m}\operatorname{Var}(\boldsymbol{\psi}<em>{\text{pred}})|}{|\tfrac{1}{n-s}\operatorname{Var}(\boldsymbol{\psi}</em>{\text{res}})|} \approx \frac{|\operatorname{Var}(\boldsymbol{\psi}<em>{\text{pred}})|}{|\operatorname{Var}(\boldsymbol{\psi}</em>{\text{res}})|}\cdot\frac{n-s}{m},
+]
+for an appropriate matrix norm. As the predictor improves with more fine-tuning, the residual score variance $\operatorname{Var}(\boldsymbol{\psi}<em>{\text{res}})$ decreases, while $\operatorname{Var}(\boldsymbol{\psi}</em>{\text{pred}})$ will typically remain bounded away from zero. In regimes where $\operatorname{Var}(\boldsymbol{\psi}_{\text{res}})$ is very small and $m/(n-s)$ is only moderately large, the second term may not be negligible relative to the first.</p>
+<p>Since your subsequent allocation rule is derived by minimizing an approximation that keeps only the first term, it would be helpful to spell out the conditions under which this simplification is intended to hold—e.g., that unlabeled data are sufficiently more abundant than labeled data and that the residual variance retains a positive floor so that $(n-s)^{-1}\operatorname{Var}(\boldsymbol{\psi}<em>{\text{res}})$ dominates $m^{-1}\operatorname{Var}(\boldsymbol{\psi}</em>{\text{pred}})$ across the relevant range of $s$. Making this assumption explicit would clarify the scope of the approximation without changing your main results.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment-card">
+          <div class="comment-header">
+            <span class="comment-number">#11</span>
+            <span class="comment-title">Incorrect variance decomposition in Proposition E.1</span>
+            
+            <span class="badge badge-pending">Pending</span>
+          </div>
+          <div class="comment-content">
+            
+            <div>
+              <div class="quote">
+                <p>Taking the expectation over $f^{(s)}$ (which is equivalent to the definition of the variance terms in the problem setup), we obtain the final result.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="message">
+                <p>The last step of the proof of Proposition E.1, beginning with “Taking the expectation over $f^{(s)}$…”, appears to conflate conditional and unconditional variance. From the derivation you obtain
+[
+\operatorname{Var}(\widehat{\mu}^{(s)}\mid f^{(s)})=\frac{1}{n-s}\operatorname{Var}(Y-f^{(s)}(X)\mid f^{(s)})+\frac{1}{m}\operatorname{Var}(f^{(s)}(X)\mid f^{(s)}).
+]
+Applying the Law of Total Variance then gives
+[
+\operatorname{Var}(\widehat{\mu}^{(s)})=\mathbb{E}!\left[\operatorname{Var}(\widehat{\mu}^{(s)}\mid f^{(s)})\right],
+]
+but in general
+[
+\mathbb{E}!\left[\operatorname{Var}(Z\mid f^{(s)})\right]\neq\operatorname{Var}(Z)
+]
+for $Z=Y-f^{(s)}(X)$, because
+[
+\operatorname{Var}(Z)=\mathbb{E}[\operatorname{Var}(Z\mid f^{(s)})]+\operatorname{Var}(\mathbb{E}[Z\mid f^{(s)}]).
+]</p>
+<p>Either (i) the proposition is meant to describe the variance conditional on the realized model $f^{(s)}$, in which case the result should be stated as
+[
+\operatorname{Var}(\widehat{\mu}^{(s)}\mid f^{(s)})=\frac{1}{n-s}\operatorname{Var}(Y-f^{(s)}(X)\mid f^{(s)})+\frac{1}{m}\operatorname{Var}(f^{(s)}(X)\mid f^{(s)}),
+]
+with the final “expectation over $f^{(s)}$” step removed; or (ii) if an unconditional variance over both data and fine-tuning randomness is intended, the expression should retain the expectation over $f^{(s)}$ (and, strictly speaking, include the additional $\operatorname{Var}(\mathbb{E}[Y-f^{(s)}(X)\mid f^{(s)}])$ term). Clarifying which probability space each variance is taken over would avoid this ambiguity and ensure consistency with the variance expression used earlier in the paper.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment-card">
+          <div class="comment-header">
+            <span class="comment-number">#12</span>
+            <span class="comment-title">Conflation of marginal and expected conditional variance</span>
+            
+            <span class="badge badge-pending">Pending</span>
+          </div>
+          <div class="comment-content">
+            
+            <div>
+              <div class="quote">
+                <p>$$
+\begin{aligned}
+\operatorname{Var}\left(\widehat{\mu}^{(s)} \mid f^{(s)}\right) &amp; =\operatorname{Var}\left(\left.\frac{1}{n-s} \sum_{i}\left(Y_{i}-f^{(s)}\left(X_{i}\right)\right) \right\rvert, f^{(s)}\right)+\operatorname{Var}\left(\left.\frac{1}{m} \sum_{j} f^{(s)}\left(\tilde{X}_{j}\right) \right\rvert, f^{(s)}\right) \
+&amp; =\frac{1}{n-s} \operatorname{Var}\left(Y-f^{(s)}(X) \mid f^{(s)}\right)+\frac{1}{m} \operatorname{Var}\left(f^{(s)}(X) \mid f^{(s)}\right)
+\end{aligned}
+$$</p>
+<p>Taking the expectation over $f^{(s)}$ (which is equivalent to the definition of the variance terms in the problem setup), we obtain the final result.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="message">
+                <p>Statement “Taking the expectation over $f^{(s)}$ (which is equivalent to the definition of the variance terms in the problem setup)” initially made me unsure exactly what randomness is included in quantities like $\operatorname{Var}(Y-f^{(s)}(X))$ and $\operatorname{Var}(f^{(s)}(X))$, since by the law of total variance marginal and conditional variances differ when $f^{(s)}$ is random. But after reading the full argument in Appendix E, it became clear that the variance of $\widehat{\mu}^{(s)}$ is computed as $\mathbb{E}[\operatorname{Var}(\widehat{\mu}^{(s)}\mid f^{(s)})]$ and that the “variance terms” used throughout are intended to be these expected conditional variances (or, equivalently, variances taken conditional on a realized $f^{(s)}$).</p>
+<p>To avoid possible misinterpretation, it would help to state this convention explicitly—either by noting early on that all variance terms are conditional on the fitted $f^{(s)}$, or by defining the objects that appear in the scaling law as $\mathbb{E}[\operatorname{Var}(Y-f^{(s)}(X)\mid f^{(s)})]$ and $\mathbb{E}[\operatorname{Var}(f^{(s)}(X)\mid f^{(s)})]$. This would make it fully transparent why no additional “variance of the conditional mean” term appears in $\operatorname{Var}(\widehat{\mu}^{(s)})$.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </section>
+  </div>
+</body>
+</html>
